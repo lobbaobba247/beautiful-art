@@ -1,33 +1,6 @@
-h1{
-    text-align: center;
-    font-family: cursive;
-    font-size: 50px;
-    background-color: brown;
-}
-img{
-    text-align: right;
-}
-p{
-    text-align: center; 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-button{
-    color: aquamarine;
-    background-color: blue;
-    width: 250px;
-    height: 100px;
-    border: 10px solid;
-    border-radius: 10px;
-    border-color: orange;
-    cursor: pointer;
-}
-button:hover{
-        background-color: rgb(0, 0, 168);
-        border-color: rgb(197, 128, 0);
-}
 html {
     height: 100%;
+    font-size: 62.5%;
 }
 body {
     height: 100%;
@@ -35,4 +8,85 @@ body {
     background-image: linear-gradient(rgb(0, 225, 255), rgb(55, 172, 39));
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 5rem;
+    background-color: brown;
+}
+.images{
+    float: right;
+    margin-left: 1.5rem;
+    white-space: pre-wrap;
+}
+img{
+    height: 42.5rem;
+}
+p{
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+}
+button{
+    color: aquamarine;
+    background-color: blue;
+    width: 25rem;
+    height: 10rem;
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: orange;
+    cursor: pointer;
+}
+.home-buttons{
+    margin: 5rem 10rem;
+}
+.store-buttons{
+    white-space: pre-wrap;
+    float: right;
+}
+.store-buttons-button1{
+    margin: 10px auto;
+}
+.store-buttons-button2{
+    margin: 325px auto;
+}
+button:hover{
+        background-color: rgb(0, 0, 168);
+        border-color: rgb(197, 128, 0);
+}
+
+@media (max-width: 62.5rem){
+    html{
+        font-size: 50%;
+    }
+    .images{
+        float: none;
+        margin: 0px;
+        white-space: unset;
+        display: flex;
+        justify-content: space-between;
+    }
+    .home-buttons{
+        margin: 4rem 6rem;
+    }
+    img{
+        height: 30rem;
+        margin: 0rem 9rem;
+    }
+    .store-buttons{
+        white-space: unset;
+        float: unset;
+        display: grid;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 8rem;
+    }
+    .store-buttons-button1{
+        margin: auto;
+    }
+    .store-buttons-button2{
+        margin: auto;
+    }
+    
 }
